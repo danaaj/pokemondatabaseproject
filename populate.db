@@ -1,0 +1,95 @@
+INSERT INTO pokemon VALUES
+	('Bulbasaur', 001, 'grass', NULL, NULL);
+INSERT INTO pokemon VALUES
+	('Ivysaur', 002, 'grass', NULL, NULL);
+INSERT INTO pokemon VALUES
+	('Venusaur', 003, 'grass', NULL, NULL);
+INSERT INTO pokemon VALUES
+	('Caterpie', 010, 'bug', 'forest', 'Veridian Forest');
+INSERT INTO pokemon VALUES
+	('Metapod', 011, 'bug', 'forest', 'Veridian Forest');
+INSERT INTO pokemon VALUES
+	('Butterfree', 012, 'bug', 'forest', 'Veridian Forest');
+INSERT INTO pokemon VALUES
+	('Pidgey', 016, 'bug', 'forest', 'Route 1');
+INSERT INTO pokemon VALUES
+	('Psyduck', 054, 'water', 'surf', 'Route 24');
+
+
+INSERT INTO effectiveness VALUES
+	('normal', NULL, 'rock');
+INSERT INTO effectiveness VALUES
+	('fight', 'normal,rock,ice', 'flying,poison,bug,psychic');
+INSERT INTO effectiveness VALUES
+	('flying', 'fight,bug,grass', 'rock,electric');
+INSERT INTO effectiveness VALUES
+	('poison', 'bug,grass', 'poison,ground,rock,ghost');
+INSERT INTO effectiveness VALUES
+	('ground', 'poison,rock,fire,electric', 'flying,bug,grass');
+INSERT INTO effectiveness VALUES
+	('rock', 'flying,bug,fire,ice', 'fight,ground');
+INSERT INTO effectiveness VALUES
+	('bug', 'poison,grass,psychic', 'fight,flying,ghost,fire');
+INSERT INTO effectiveness VALUES
+	('ghost', 'ghost', 'normal,psychic');
+INSERT INTO effectiveness VALUES
+	('fire', 'bug,grass,ice', 'rock,fire,water,dragon');
+INSERT INTO effectiveness VALUES
+	('water', 'ground,rock,fire', 'water,grass,dragon');
+INSERT INTO effectiveness VALUES
+	('grass', 'ground,rock,water', 'flying,poison,bug,fire,grass,dragon');
+INSERT INTO effectiveness VALUES
+	('electric', 'flying,water', 'ground,grass,electric,dragon');
+INSERT INTO effectiveness VALUES
+	('psychic', 'fight,poison,', 'psychic');
+INSERT INTO effectiveness VALUES
+	('ice', 'flying,ground,grass,dragon', 'water,ice');
+INSERT INTO effectiveness VALUES
+	('dragon', 'dragon', NULL);
+
+INSERT INTO gym VALUES
+	('Pewter City Gym', 1, 'Boulder Badge', 'Rock');
+INSERT INTO gym VALUES
+	('Cerulean City Gym', 2, 'Cascade Badge', 'Water');
+INSERT INTO gym VALUES
+	('Vermilion City Gym', 3, 'Thunder Badge', 'Electric');
+INSERT INTO gym VALUES
+	('Celadon City Gym', 4, 'Rainbow Badge', 'Grass');
+INSERT INTO gym VALUES
+	('Fuchsia City Gym', 5, 'Soul Badge', 'Poison');
+INSERT INTO gym VALUES
+	('Saffron City Gym', 6, 'Marsh Badge', 'Psychic');
+INSERT INTO gym VALUES
+	('Cinnabar Island Gym', 7, 'Volcano Badge', 'Fire');
+INSERT INTO gym VALUES
+	('Viridian City Gym', 8, 'Earth Badge', 'Ground');
+	
+INSERT INTO trainer_team VALUES
+	(1, 001, 001, 001, 001, 001, 002);
+INSERT INTO trainer_team VALUES
+	(2, 011, 011, 011, 011, 001, null);
+INSERT INTO trainer_team VALUES
+	(3, 001, 002, 010, 016, null, null);
+INSERT INTO trainer_team VALUES
+	(4, 001, 002, 003, 011, 001, 012);
+INSERT INTO trainer_team VALUES
+	(69, 054, 054, 054, 054, 054, 054);
+	
+INSERT INTO trainer VALUES
+	(1, 'Pewter City', 'male', 'Brock', 1234567890);
+INSERT INTO trainer VALUES
+	(2, 'Cerulean City', 'female', 'Misty', 0987654321);
+INSERT INTO trainer VALUES
+	(3, 'Vermilion City', 'male', 'Lt. Surge', 1236567890);
+INSERT INTO trainer VALUES
+	(4, 'Celadon City', 'female', 'Erika', 2134567890);
+INSERT INTO trainer VALUES
+	(5, 'Fuchsia City', 'male', 'Koga', 1233567890);
+INSERT INTO trainer VALUES
+	(6, 'Saffron City', 'female', 'Sabrina', 1134567890);
+INSERT INTO trainer VALUES
+	(7, 'Cinnabar Island', 'male', 'Blaine', 1234568888);
+INSERT INTO trainer VALUES
+	(8, 'Viridian City', 'male', 'Giovanni', 1111567890);
+INSERT INTO trainer VALUES
+	(69, 'Pallet Town', 'male', 'Thomas', 4199570197);
